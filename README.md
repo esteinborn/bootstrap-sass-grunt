@@ -4,6 +4,14 @@ The original version of [bootstrap-sass](https://github.com/twbs/bootstrap-sass)
 
 This should hopefully be a drop and replace for new versions of boostrap-sass.
 
+It pulls in [bootstrap-sass](https://github.com/twbs/bootstrap-sass) as a submodule.
+
+**If you are using git command line**
+
+You must run two commands: `git submodule init` to initialize your local configuration file, and `git submodule update` to fetch all the data from that project and check out the appropriate commit.
+
+After running `npm install` run `grunt init` to place all the files where they should be to start.
+
 ## Bootstrap for Sass
 
 
