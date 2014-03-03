@@ -257,7 +257,7 @@ module.exports = function (grunt) {
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:dist', 'dist-js']);
 
-  grunt.registerTask('init', ['copy:init', 'clean:init']);
+  grunt.registerTask('scaffold-bootstrap', ['copy:init', 'clean:init']);
 
   // Default task.
   grunt.registerTask('default', ['dev']);
