@@ -29,7 +29,7 @@ module.exports = function (grunt) {
       init: {
         src: [
           'bootstrap-sass',
-          'assets/css/_theme.scss'
+          'assets/scss/_theme.scss'
         ]
       },
       dist: {
@@ -102,8 +102,8 @@ module.exports = function (grunt) {
           style: 'expanded'
         },
         files: {                         // Dictionary of files
-          'dist/css/<%= pkg.name %>.css': 'assets/css/bootstrap.scss',       // 'destination': 'source'
-          'dist/css/<%= pkg.name %>-theme.css': 'assets/css/theme.scss'
+          'dist/css/<%= pkg.name %>.css': 'assets/scss/bootstrap.scss',       // 'destination': 'source'
+          'dist/css/<%= pkg.name %>-theme.css': 'assets/scss/theme.scss'
         }
       },
       dist: {                            // Target
@@ -111,8 +111,8 @@ module.exports = function (grunt) {
           style: 'compressed'
         },
         files: {                         // Dictionary of files
-          'dist/css/<%= pkg.name %>.css': 'assets/css/bootstrap.scss',       // 'destination': 'source'
-          'dist/css/<%= pkg.name %>-theme.css': 'assets/css/theme.scss'
+          'dist/css/<%= pkg.name %>.css': 'assets/csss/bootstrap.scss',       // 'destination': 'source'
+          'dist/css/<%= pkg.name %>-theme.css': 'assets/csss/theme.scss'
         }
       }
     },
@@ -191,13 +191,13 @@ module.exports = function (grunt) {
             expand: true,
             cwd: 'bootstrap-sass/vendor/assets/stylesheets/bootstrap',
             src: ['**/*'],
-            dest: 'assets/css'
+            dest: 'assets/scss'
           },
           {
             expand: true,
             cwd: 'bootstrap-sass/vendor/assets/stylesheets/bootstrap',
             src: ['_theme.scss'],
-            dest: 'assets/css/',
+            dest: 'assets/scss/',
             rename: function(dest, src) {
               return dest + 'theme.scss';
             }
